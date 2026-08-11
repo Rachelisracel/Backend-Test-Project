@@ -2,10 +2,10 @@
   "name": "testcode",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/app.ts",
   "scripts": {
-    "dev": "tsx src/index.ts",
-    "start": "tsx src/index.ts",
+    "dev": "tsx src/app.ts",
+    "start": "tsx src/app.ts",
     "test": "vitest run"
   },
   "keywords": [],
