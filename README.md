@@ -1,30 +1,42 @@
-# Mini REST API - Bài Test Backend
+# Backend Developer Internship Test - Node.js (TypeScript)
 
-## 1. Giới thiệu
+Chào mừng bạn đến với dự án **Backend Developer Internship Test** tại **CÔNG TY TNHH GENX PK STORY (GXP)**. 
 
-Project thực hiện bài test Backend gồm:
-
-- Bài 2: Tạo lịch học dựa trên ngày bắt đầu, số buổi học, ngày học trong tuần và ngày nghỉ.
-- Bài 3: Tính hóa đơn học phí, khuyến mãi và tiền hoàn khi hủy buổi học.
-- Phần C: Xây dựng Mini REST API chạy trên localhost.
-- Phần D: Unit Test bằng Vitest.
+Dự án được triển khai bằng **Node.js**, **Express** và **TypeScript**, áp dụng kiến trúc **Clean Architecture** (tách biệt Controllers, Services, Validators, Routes). Dự án bao gồm đầy đủ **Unit Tests (Vitest)** và đã được **deploy lên Render**.
 
 ---
 
-## 2. Tech Stack
-
-- Node.js
-- TypeScript
-- Express.js
-- Vitest
-- Zod
-- tsx
+## 📌 Links Dự Án
+* **GitHub Repository:** [https://github.com/Rachelisracel/Backend-Test-Project](https://github.com/Rachelisracel/Backend-Test-Project)
+* **Production Live API (Render):** [https://backend-test-project-t5e2.onrender.com](https://backend-test-project-t5e2.onrender.com)
+* **Tài liệu:** Thư mục `/docs` trong repository.
 
 ---
 
-## 3. Cách cài đặt
+## 🛠️ Công Nghệ Sử Dụng (Tech Stack)
 
-Clone project về máy:
+* **Language:** Node.js (TypeScript)
+* **Framework:** Express.js
+* **Validation:** Zod / Joi / class-validator
+* **Testing:** Vitest
+* **Deployment:** Render
 
-```bash
-git clone <LINK_GITHUB_CUA_BAN>
+---
+
+## 🏗️ Cấu Trúc Thư Mục (Project Architecture)
+
+```text
+.
+├── docs/                     # Thiết kế ERD & Danh sách API
+├── src/
+│   ├── controllers/          # HTTP request handlers
+│   ├── services/             # Business logic (Schedule & Invoice)
+│   ├── validators/           # Input validation schemas & middlewares
+│   ├── routes/               # Express routes
+│   ├── middlewares/          # Global error handler
+│   ├── utils/                # Helper xử lý date & timezone (Asia/Ho_Chi_Minh)
+│   └── app.ts                # Server entry point
+├── tests/                    # Unit test suites (15 test cases)
+├── package.json
+├── tsconfig.json
+└── README.md
